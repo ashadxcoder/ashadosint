@@ -39,8 +39,8 @@ REMOTE_INDEXES = {
 
 # ── Credit Info ──────────────────────────────────────────────────────────────
 CREDIT_INFO = {
-    "developer": "rehuu",
-    "channel": "@RehuSzr"
+    "developer": "Ashad Khan",
+    "channel": "@ashadxapi"
 }
 
 # ── DuckDB Connection Pool ──────────────────────────────────────────────────
@@ -214,7 +214,7 @@ def root():
         "index_source": INDEX_SOURCE,
         "columns": SEARCH_FIELDS,
         "docs": "/docs",
-        "developer": "rehuu | channel @RehuSzr",   # <-- credit added
+        "developer": "Ashad Khan | channel @ashadxapi",   # <-- credit added
     }
 
 
@@ -341,7 +341,7 @@ def search_ui(query: str, limit: int) -> str:
     searched = ", ".join(data.get("searched_fields", []))
 
     if not results:
-        return f"🔍 **Query:** `{q}`\n**Searched:** {searched}\n\n❌ **No data found** for this number.\n\n---\n\n👨‍💻 **Developer:** @awwrehu | 📢 **Channel:** @RehuSzr"
+        return f"🔍 **Query:** `{q}`\n**Searched:** {searched}\n\n❌ **No data found** for this number.\n\n---\n\n👨‍💻 **Developer:** @593 | 📢 **Channel:** @RehuSzr"
 
     header = f"🔍 **Query:** `{q}`  |  **Found:** {count} results  |  **Searched:** {searched}\n\n---\n\n"
     parts = []
@@ -349,7 +349,7 @@ def search_ui(query: str, limit: int) -> str:
         parts.append(f"### Result {i}\n{format_result(row)}")
     
     # Add credit footer at the very end
-    footer = "\n\n---\n\n👨‍💻 **Developer:** rehuu | 📢 **Channel:** @RehuSzr"
+    footer = "\n\n---\n\n👨‍💻 **Developer:** Ashad Khan | 📢 **Channel:** @ashadxapi"
     
     return header + "\n\n---\n\n".join(parts) + footer
 
@@ -405,14 +405,14 @@ def build_ui():
 
 **Source:** [HF Dataset](https://huggingface.co/datasets/rehuuuu/icrm-hitek-full-db-mixed)
 
-👨‍💻 **Developer:** rehuu | 📢 **Channel:** @RehuSzr
+👨‍💻 **Developer:** Ashad Khan| 📢 **Channel:** @ashadxapi
             """)
 
         # Developer credit footer
         gr.Markdown(
             "---\n"
             "<div class='footer'>"
-            "👨‍💻 **Developer:** rehuu  |  📢 **Channel:** @RehuSzr"
+            "👨‍💻 **Developer:** Ashad Khan  |  📢 **Channel:** @ashadxapi"
             "</div>",
             elem_classes="footer"
         )
