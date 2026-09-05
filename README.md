@@ -191,8 +191,8 @@ All listed in requirements.txt.
 
 👨‍💻 Credits
 
-· Developer: @awwrehu
-· Channel: @RehuSzr
+· Developer: @ashadxcoder
+· Channel: @ashadxapi
 · Dataset: ICMR + HITEK Full DB Mixed – hosted on HuggingFace.
 
 ---
